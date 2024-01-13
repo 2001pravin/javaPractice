@@ -30,6 +30,16 @@ public class Box {
         numberTrangelP(n,1);
         System.out.println("numberTrangelPJ");
         numberTrangelPJ(n,1);
+        System.out.println("newPatterns");
+        newPatterns(n);
+        System.out.println("SolidRombauss");
+        SolidRombauss(n);
+        System.out.println("Praymid");
+        Praymid(n);
+        System.out.println("Praymid2");
+        Praymid2(n);
+        System.out.println("Praymid4");
+        Praymid4(n);
        
         
 }
@@ -199,5 +209,137 @@ for(int i=1 ; i<=n ; i++){
    }
 
 
+ public static void newPatterns(int n ){
+// 1
+// 12  
+// 123  
+// 1234   
+// 12345
+ for(int i=1 ; i<=n ; i++){
+        for(int j=1; j<=i; j++){
+            System.out.print("*");
+
+          
+           }
+           int  spces=2*(n-i);
+           for(int j=1; j<=spces; j++){
+                  System.out.print(" ");
+                 
+          
+           }
+           for(int j = 1; j<=i; j++){
+            System.out.print("*");
+
+           }
+             
+              System.out.println();
+        }
+        
+
+      
+    for(int i=n ; i>=1 ; i--){
+        for(int j=1; j<=i; j++){
+            System.out.print("*");
+
+          
+           }
+           int  spces=2*(n-i);
+           for(int j=1; j<=spces; j++){
+                  System.out.print(" ");
+                 
+          
+           }
+           for(int j=1; j<=i; j++){
+            System.out.print("*");
+
+           }
+             
+               System.out.println();
+        }
+       
+ }
+
+
+ public static void SolidRombauss(int n ){
+    for (int i = 1; i <=n; i++) {
+        int space=n-i; 
+        for(int j=1; j<=space; j++){
+            System.out.print(" ");
+        }
+        for (int j = 1; j <=n; j++) {
+            System.out.print("*");
+            
+        }
+         System.out.println();
+
+    }
+   
+ }
+
+
+
+ public static void Praymid( int n){
+    for (int i=1; i<=n; i++){
+        for (int j = 1; j<=n-i; j++) {
+            System.out.print(" ");
+            
+        }
+        for (int j = 1; j<=i; j++) {
+            System.out.print(i + " ");
+            
+        }
+        System.out.println();
+    }
+
+    
+
+ }
+ public static void Praymid2( int n){
+    for (int i=1; i<=n; i++){
+        for (int j = 1; j<=n-i; j++) {
+            System.out.print(" ");
+            
+        }
+        for (int j =i; j>=1; j--) {
+            System.out.print(j);
+            
+        }
+        for (int j =2; j<=i; j++) {
+            System.out.print(j);
+            
+        }
+        System.out.println();
+    }
+
+    
+
+ }
+
+ public static void Praymid4(int n){
+    for (int i = 1; i <=n; i++) {
+      for(int j=1; j<=n-i; j++){
+        System.out.print(" ");
+      }
+      for (int j = 1; j<=2*i-1; j++) {
+        System.out.print("*");
+        
+      }
+      System.out.println();
+        
+    }
+    for (int i = n; i >=1; i--) {
+        for(int j=1; j<=n-i; j++){
+          System.out.print(" ");
+        }
+        for (int j = 1; j<=2*i-1; j++) {
+          System.out.print("*");
+          
+        }
+        System.out.println();
+          
+      }
+ }
 
 }
+
+ 

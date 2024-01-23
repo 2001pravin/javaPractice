@@ -60,5 +60,5 @@ System.out.println("the max value:"+ ms);
         // sub(arr);
         kadanes(arr);
         
-    }
+    } 
 }

@@ -227,6 +227,7 @@ public class Linklist {
         }
         return true;
      }
+     
 
     public static void main(String[] args) {
         Linklist ll = new Linklist();
